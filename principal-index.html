@@ -1,0 +1,159 @@
+<DOCTYPE! html>
+<HTML lang= es>
+<head>
+    <meta charset="utf-8"/>
+    <title>MARESGO LTDA</title>
+    <!--
+    <link rel="stylesheet" href="estilos1_Maresgoltda.css" type="text/css"/>
+    -->
+    <link rel="stylesheet" href="estilos1_Maresgoltda.css" type="text/css"/>
+</head>
+<BODY>
+    <nav>
+        <ul>
+        <li><a href="#">MARESGO LTDA</a></li>
+        <li><a href="#">SERVICIOS</a></li>
+        <li><a href="#">PEDIDOS</a></li>
+        <li><a href="#">CONTACTOS</a></li>
+        </ul>
+    </nav>
+    <header id="arriba">
+        <div id="encabezado">
+            <H1><hr>MARESGO LTDA</H1><br>
+            <H5>Soldaduras en marcos y estructuras en alumnio<hr></H5>
+        </div>
+    </header>
+    <div id="caja1">
+        <h2>Servicio para <strong>soldaduras</strong> en aluminio</h2><br>
+        <img src="soldadura.jpg"/>
+    </div>
+    
+    <div id="caja2">
+        <h2>Marcos en aluminio para Screen</h2><br>
+        <img src="perfil-alu.jpg"/>
+    </div>
+    
+    <div id="caja3">
+        <h2>Con mas de 20 años en fabricación y soldadura en aluminio</h2><br>
+        <img src="soldador.jpg"/>
+    </div>
+    <div id="cambio">
+        <div class="imagenes">
+            <div class="movimiento">
+                <img src="tubular.jpg"/>
+                <img src="perfil-alu.jpg"/>
+                <img src="soldador.jpg"/>
+            </div>
+        </div>
+    </div>
+        
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery.slides.min.js"></script>
+    
+    <script>    
+    $(function(){
+      $(".movimiento").slidesjs({
+        play: {
+          active: true,
+            // [boolean] Generate the play and stop buttons.
+            // You cannot use your own buttons. Sorry.
+          effect: "slide",
+            // [string] Can be either "slide" or "fade".
+          interval: 3000,
+            // [number] Time spent on each slide in milliseconds.
+          auto: true,
+            // [boolean] Start playing the slideshow on load.
+          swap: true,
+            // [boolean] show/hide stop and play buttons
+          pauseOnHover: false,
+            // [boolean] pause a playing slideshow on hover
+          restartDelay: 2500
+            // [number] restart delay on inactive slideshow
+        }
+      });
+    });
+    </script>
+    <div id="perfiles">Los perfiles que manejamos en maresgo ltda son los siguientes:<br><br><br>
+        <select id="tipos" name="perfiles">
+            <option value="media">1/2" X 1/2"</option>
+            <option value="trescuartos">3/4" X 3/4"</option>
+            <option value="unaxuna">1" X 1"</option>
+            <option value="unaymedcuadcal16">1 1/2" X 1 1/2" cal 16</option>
+            <option value="unaymedcuadcal20">1 1/2" X 1 1/2" cal 20</option>
+            <option value="dosxunaymedcal16">2" X 1 1/2" cal 16</option>
+            <option value="dosxunaymedcal20">2" X 1 1/2" cal 20</option>
+            <option value="tresxunaymedcal16">3" X 1 1/2" cal 16</option>
+            <option value="tresxunaymedcal20">3" X 1 1/2" cal 20</option>
+        </select>
+    </div>
+    <div id="pie_article">
+        <h6>fecha de la publicación</h6>
+    </div>
+    
+    <div id="formulario">
+        <form>
+            <h1>Formulario de pedido</h1>
+            <h2>Los campos con <strong><abbr title="required">*</abbr></strong> son obligatorios.</h2>
+            <h2>Información del cliente</h2>
+              <fieldset>
+                <legend>Pedido:</legend>
+                <ul>
+                    <li>
+                      <label for="title_1">
+                          <input type="radio" id="title_1" name="title" value="Soldadura" />
+                          Soldadura
+                      </label>
+                    </li>
+                    <li>
+                      <label for="title_2">
+                          <input type="radio" id="title_2" name="title" value="Marco" />
+                          Marco
+                      </label>
+                    </li>
+                    <li>
+                      <label for="title_3">
+                          <input type="radio" id="title_3" name="title" value="Estructura" />
+                          Estructura
+                      </label>
+                    </li>
+                </ul>
+              </fieldset>
+            <label for="nombre">
+                <span>Nombre: </span>
+                <input type="text" id="nombre" name="nombre" required />
+                <strong><abbr title="required">*</abbr></strong><br>
+            </label>
+            <label for="mail">
+                <span>E-mail: </span>
+                <input type="email" id="mail" name="email" required />
+                <strong><abbr title="required">*</abbr></strong>
+                </label><br>
+            <label for="telefono">
+                <span>Telefono: </span>
+                <input type="number" id="telefono" name="telefono" required />
+                <strong><abbr title="required">*</abbr></strong>
+            </label><br>
+            <label for="detalle">
+                <span>Detalle del pedido: </span>
+                <input type="textarea" id="detalle" name="detalle" required />
+                <strong><abbr title="required">*</abbr></strong>
+            </label><br>
+            <label>
+                <span>
+                    <button>Solicitar</button>
+                </span>
+            </label>
+        </form>
+    </div>
+        Aqui van las promociones del dia...
+        PROMOS...
+    <footer>
+        <h6>Esta pagina fue desarrollada por LucasBong &#169; <br>Bogotá Copyrigth 2016</h6>
+        <div id="contactos">
+            <a href="https://www.facebook.com"><IMG SRC="facebook.ico" width="50px" heigth="50px"/></a>
+            <a href="https://www.twitter.com"><IMG SRC="twitter.ico" width="50px" heigth="50px"/></a>
+            <a href="https://www.instagram.com"><IMG SRC="instagram.ico" width="50px" heigth="50px"/></a>
+        </div>
+    </footer>
+</BODY>
+</HTML>
